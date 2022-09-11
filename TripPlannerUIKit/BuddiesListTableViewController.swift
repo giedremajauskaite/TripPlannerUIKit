@@ -49,8 +49,6 @@ class BuddiesListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
         
         cell.textLabel?.text = String("\(buddies[indexPath.row].firstName)" + " \(buddies[indexPath.row].lastName)")
 
